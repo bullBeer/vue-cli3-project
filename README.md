@@ -10,14 +10,20 @@ npm install
 npm run serve
 ```
 
-### Compiles and minifies for production
+### Compiles and minifies
+### 测试环境打包
 ```
-npm run build
+npm run build-test
+```
+### 开发环境打包
+```
+npm run build-dev
 ```
 
-### Run your tests
+### 生产环境打包
 ```
-npm run test
+npm run build
+npm run build-prod
 ```
 
 ### Lints and fixes files
