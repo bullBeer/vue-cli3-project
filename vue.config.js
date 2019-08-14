@@ -1,7 +1,7 @@
 // vue.config.js
 module.exports = {
   transpileDependencies: [],
-  productionSourceMap: process.env.VUE_APP_MODE === 'development',
+  productionSourceMap: process.env.VUE_APP_MODE !== 'production',
   publicPath: process.env.NODE_ENV === 'production' ? './' : '/',
   outputDir: process.env.BASE_URL,
   assetsDir: 'static',
