@@ -1,6 +1,7 @@
 // vue.config.js
 module.exports = {
-  productionSourceMap: false,
+  transpileDependencies: [],
+  productionSourceMap: process.env.VUE_APP_MODE === 'development',
   publicPath: process.env.NODE_ENV === 'production' ? './' : '/',
   outputDir: process.env.BASE_URL,
   assetsDir: 'static',
@@ -11,5 +12,8 @@ module.exports = {
     performance: {
       hints: false
     }
+  },
+  chainWebpack: config => {
+
   }
 }

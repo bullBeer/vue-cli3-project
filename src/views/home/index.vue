@@ -11,6 +11,12 @@ export default {
     return {
       message: 'Hello'
     }
+  },
+  created() {
+    console.log('xxxx')
+  },
+  methods: {
+
   }
 }
 </script>
