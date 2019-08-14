@@ -6,5 +6,10 @@ module.exports = {
   assetsDir: 'static',
   css: {
     extract: true
+  },
+  configureWebpack: {
+    performance: {
+      hints: false
+    }
   }
 }
