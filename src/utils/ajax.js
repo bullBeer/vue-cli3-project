@@ -11,7 +11,7 @@ switch(process.env.VUE_APP_MODE) {
     API_HOST = '//192.168.0.1/dev/api'
     break
   // 测试环境
-  case 'test':
+  case 'testing':
     API_HOST = '//192.168.0.1/test/api'
     break
   default:

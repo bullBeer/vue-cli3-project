@@ -4,10 +4,9 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "build-dev": "vue-cli-service build --mode development",
-    "build-prod": "vue-cli-service build --mode production",
-    "build-test": "vue-cli-service build --mode test",
+    "build-dev": "vue-cli-service build --mode dev",
+    "build-prod": "vue-cli-service build --mode prod",
+    "build-test": "vue-cli-service build --mode uat",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
@@ -26,23 +25,6 @@
     "less": "^3.9.0",
     "less-loader": "^5.0.0",
     "vue-template-compiler": "^2.6.10"
-  },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended"
-    ],
-    "rules": {
-      "no-unused-vars": 0,
-      "no-console": 0
-    },
-    "parserOptions": {
-      "parser": "babel-eslint"
-    }
   },
   "postcss": {
     "plugins": {

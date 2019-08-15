@@ -1,5 +1,6 @@
 // vue.config.js
 module.exports = {
+  lintOnSave: false,
   transpileDependencies: ['ansi-regex', 'strip-ansi'],
   productionSourceMap: process.env.VUE_APP_MODE !== 'production',
   publicPath: process.env.NODE_ENV === 'production' ? './' : '/',
@@ -15,5 +16,11 @@ module.exports = {
   },
   chainWebpack: config => {
 
+  },
+  devServer: {
+    overlay: {
+      warnings: false,
+      errors: false
+    }
   }
 }
