@@ -2,7 +2,7 @@
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 module.exports = {
   lintOnSave: false,
-  transpileDependencies: ['ansi-regex', 'strip-ansi'],
+  transpileDependencies: [],
   productionSourceMap: process.env.NODE_ENV === 'development',
   publicPath: process.env.NODE_ENV === 'production' ? './' : '/',
   outputDir: process.env.BASE_URL,
