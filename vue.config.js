@@ -2,7 +2,7 @@
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 module.exports = {
   lintOnSave: false,
-  transpileDependencies: [],
+  transpileDependencies: process.env.NODE_ENV === 'development' ? ['*'] : [], // 解决npm run serve某些node_modules依赖不能被babel编译问题
   productionSourceMap: process.env.NODE_ENV === 'development',
   publicPath: process.env.NODE_ENV === 'production' ? './' : '/',
   outputDir: process.env.BASE_URL,
