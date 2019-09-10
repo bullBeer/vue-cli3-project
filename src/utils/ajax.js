@@ -18,7 +18,7 @@ switch(process.env.VUE_APP_MODE) {
     axios.defaults.baseURL = '//192.168.0.1/test/api'
     break
   default:
-    axios.defaults.baseURL = '//192.168.0.57:8080/news'
+    axios.defaults.baseURL = '//192.168.0.57:8080/news' // 本地server环境
 }
 
 const request = (method, url, options) => {
