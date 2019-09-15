@@ -16,16 +16,14 @@ export default {
     }
   },
   created() {
-    // this.getHome()
+    this.getHome()
   },
   methods: {
     async getHome() {
-      const res = await this.$api.getHome({})
+      const res = await this.$api.getHome()
       if (res.code == 200) {
-        console.log(res)
+        this.data = res.data
       }
-      this.data = res
-      console.log('res', res)
     }
   }
 }
